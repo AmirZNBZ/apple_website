@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
@@ -20,7 +22,7 @@ canvas {
   touch-action: none;
 }
 
-.scrim-max-width {
+.screen-max-width {
   margin-inline-start: auto;
   margin-inline-end: auto;
   position: relative;
@@ -28,16 +30,12 @@ canvas {
 }
 
 @layer utilities {
-  .flex-center {
-    @apply flex items-center justify-center;
-  }
-
   .nav-height {
     @apply h-[calc(100vh-60px)];
   }
 
   .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue;
+    @apply px-5 py-2 rounded-3xl bg-blue-500 my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue-500 hover:border-blue-500;
   }
 
   .color-container {
@@ -57,15 +55,15 @@ canvas {
   }
 
   .section-heading {
-    @apply text-gray lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20;
+    @apply text-gray-50 lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20;
   }
 
   .feature-text {
-    @apply text-gray max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px];
+    @apply text-gray-50 max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px];
   }
 
   .feature-text-container {
-    @apply w-full flex-center flex-col md:flex-row mt-10 md:mt-16 gap-5;
+    @apply w-full flex items-center justify-center flex-col md:flex-row mt-10 md:mt-16 gap-5;
   }
 
   .feature-video {
@@ -77,11 +75,11 @@ canvas {
   }
 
   .link {
-    @apply text-blue hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20;
+    @apply text-blue-500 hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20;
   }
 
   .control-btn {
-    @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex-center;
+    @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex items-center justify-center;
   }
 
   .hero-title {
@@ -93,7 +91,7 @@ canvas {
   }
 
   .hiw-subtitle {
-    @apply text-gray font-semibold text-xl md:text-2xl py-10 text-center;
+    @apply text-gray-50 font-semibold text-xl md:text-2xl py-10 text-center;
   }
 
   .hiw-video {
@@ -105,7 +103,7 @@ canvas {
   }
 
   .hiw-text {
-    @apply text-gray text-xl font-normal md:font-semibold;
+    @apply text-gray-50 text-xl font-normal md:font-semibold;
   }
 
   .hiw-bigtext {
