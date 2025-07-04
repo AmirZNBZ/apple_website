@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react";
-import { highlightsSlides } from "../constants";
-import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import { useEffect, useRef, useState } from "react";
+import { highlightsSlides } from "../constants";
 import { pauseImg, playImg, replayImg } from "../utils";
 
 const VideoCarousel = () => {
