@@ -37,3 +37,29 @@ git clone https://github.com/AmirZNBZ/apple_website.git
 cd apple_website
 npm install
 npm run dev
+
+
+## 📦 Deployment
+```bash
+npm run build
+npm run deploy
+
+## 📁 Folder Structure
+public/
+  └── assets/
+        ├── images/
+        └── models/
+src/
+  ├── components/
+  ├── constants/
+  └── utils/
+
+## ✍️ Author
+
+Made with ❤️
+
+
+```md
+![Preview](./public/assets/images/1.png)
+![Preview](./public/assets/images/2.png)
+![Preview](./public/assets/images/3.png)
