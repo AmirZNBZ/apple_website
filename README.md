@@ -39,8 +39,9 @@ npm install
 npm run dev
 ```
 
-```bash
 ## 📦 Deployment
+
+```bash
 npm run build
 npm run deploy
 ```
@@ -64,3 +65,4 @@ Made with ❤️
 ![Preview](./public/assets/images/1.png)
 ![Preview](./public/assets/images/2.png)
 ![Preview](./public/assets/images/3.png)
+```
