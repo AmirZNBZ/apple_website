@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  // base: "/apple_website/",
+  base: "/iPhone_15_website",
   plugins: [
     react(),
     sentryVitePlugin({
